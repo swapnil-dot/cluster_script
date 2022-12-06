@@ -61,3 +61,5 @@ EOF
 sudo systemctl enable docker
 sudo systemctl daemon-reload
 sudo systemctl restart docker
+sudo rm /etc/containerd/config.toml
+sudo systemctl restart containerd
